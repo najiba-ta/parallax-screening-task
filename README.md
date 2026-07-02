@@ -27,35 +27,6 @@ It is a simple full-stack application where users can add multiple items with pr
 
 ---
 
-## 📁 Project Structure
-
-
-app/
-├── api/
-│ └── calculate/
-│ └── route.js
-├── layout.js
-└── page.js
-
-components/
-├── Navbar.jsx
-├── Header.jsx
-├── ItemForm.jsx
-├── ItemRow.jsx
-├── ResultCard.jsx
-└── Footer.jsx
-
-
----
-
-## 🔌 API Endpoint
-
-### POST `/api/calculate`
-
-This endpoint receives an array of items and returns the total price and the most expensive item.
-
----
-
 ### 📥 Request Example
 [
   { "name": "Apple", "price": 20 },
