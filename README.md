@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Item Calculator
 
-## Getting Started
+This project was built as part of a technical screening task for Parallax Labs.
 
-First, run the development server:
+It is a simple full-stack application where users can add items with prices, and the system calculates the total price along with the most expensive item.
 
-```bash
+Features
+Add multiple items with name and price
+Remove items dynamically
+Calculate total price
+Identify the most expensive item
+Simple API integration between frontend and backend
+Basic validation and error handling
+Responsive UI
+Tech Stack
+Next.js (App Router)
+React
+Tailwind CSS
+JavaScript (ES6+)
+Project Structure
+app/
+  api/
+    calculate/
+      route.js
+  layout.js
+  page.js
+
+components/
+  Navbar.jsx
+  Header.jsx
+  ItemForm.jsx
+  ItemRow.jsx
+  ResultCard.jsx
+  Footer.jsx
+API Endpoint
+POST /api/calculate
+
+This endpoint accepts an array of items and returns the total price and the most expensive item.
+
+Request Example
+[
+  { "name": "Apple", "price": 20 },
+  { "name": "Laptop", "price": 1000 }
+]
+Response Example
+{
+  "success": true,
+  "total": 1020,
+  "mostExpensive": {
+    "name": "Laptop",
+    "price": 1000
+  }
+}
+Getting Started
+Clone the repository
+git clone https://github.com/najiba-ta/parallax-screening-task.git
+Install dependencies
+npm install
+Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+How it works
+User adds items (name and price)
+Data is sent to the backend API
+Backend calculates total and most expensive item
+Result is displayed on the UI
+Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This is a small project built for a technical screening task.
+The focus was on functionality, clean code structure, and proper API integration.
 
-## Learn More
+Author
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Najiba Takarrum
+Email: shahidnajiba@gmail.com
+GitHub: https://github.com/najiba-ta
