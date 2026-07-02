@@ -12,8 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Item Calculator",
-  description: "Parallax Labs Technical Screening Task - Next.js API & Form",
+  title: "Item Calculator | Parallax Labs",
+  description:
+    "Technical screening task built with Next.js and Tailwind CSS.",
 };
 
 export default function RootLayout({ children }) {
